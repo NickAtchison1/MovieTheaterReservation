@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
-using MovieTheaterReservation.Server.Data;
-using MovieTheaterReservation.Server.Models;
+using MovieTheaterReservation.Data.Data;
+using MovieTheaterReservation.Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

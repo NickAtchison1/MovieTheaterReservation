@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MovieTheaterReservation.Server.Data;
+using MovieTheaterReservation.Data.Data;
 using System;
 
-namespace MovieTheaterReservation.Server.Data.Migrations
+namespace MovieTheaterReservation.Data.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]

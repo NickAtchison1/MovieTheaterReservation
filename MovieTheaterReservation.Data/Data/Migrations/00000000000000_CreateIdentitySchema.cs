@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace MovieTheaterReservation.Server.Data.Migrations
+namespace MovieTheaterReservation.Data.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

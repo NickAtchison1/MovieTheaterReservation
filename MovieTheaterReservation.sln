@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Shared", "MovieTheaterReservation\Shared\MovieTheaterReservation.Shared.csproj", "{C53607CA-65C3-40F5-B0F6-D609E8A6A7D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Data", "MovieTheaterReservation.Data\MovieTheaterReservation.Data.csproj", "{1109C9F7-DABC-40B6-8B5A-59C514741426}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C53607CA-65C3-40F5-B0F6-D609E8A6A7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53607CA-65C3-40F5-B0F6-D609E8A6A7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C53607CA-65C3-40F5-B0F6-D609E8A6A7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
