@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MovieTheaterReservation.Shared.DisplayModels.Auditorium
 {
-    internal class AuditoriumListItem
+    public class AuditoriumListItem
     {
+        public string Name { get; set; } = string.Empty;
     }
 }
