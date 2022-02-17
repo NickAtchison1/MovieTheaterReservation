@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MovieTheaterReservation.Shared.DisplayModels.Enums;
 
 namespace MovieTheaterReservation.Shared.DisplayModels.Movie
 {
-    internal class MovieListItem
+    public class MovieListItem
     {
+        public string Title { get; set; } = string.Empty;
+
+        public Rating Rating { get; set; }
+
     }
 }
