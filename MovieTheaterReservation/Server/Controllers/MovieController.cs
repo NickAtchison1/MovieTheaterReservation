@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MovieTheaterReservation.Data.Models;
@@ -11,6 +12,7 @@ namespace MovieTheaterReservation.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MovieController : ControllerBase
     {
         private readonly IMovieService _movieService;
@@ -49,6 +51,13 @@ namespace MovieTheaterReservation.Server.Controllers
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var result = await _movieService.UpdateMovie(movieEdit, userId);
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult> DeleteMovie(int id)
+        {
+            var result = await _movieService.DeleteMovieById(id);
             return Ok(result);
         }
     }

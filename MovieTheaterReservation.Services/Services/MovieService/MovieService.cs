@@ -76,11 +76,11 @@ namespace MovieTheaterReservation.Services.Services.MovieService
 
         }
 
-        public async Task DeleteMovieById(int id)
+        public async Task<bool> DeleteMovieById(int id)
         {
             var movieToDelete = await _context.Movies.SingleAsync(m => m.Id == id);
             _context.Movies.Remove(movieToDelete);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
     }
