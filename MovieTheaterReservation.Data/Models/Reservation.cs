@@ -11,7 +11,7 @@ namespace MovieTheaterReservation.Data.Models
     {
         public int Id { get; set; }
         public int MovieShowingId { get; set; }
-        public MovieShowing? MovieShoing { get; set; }
+        public MovieShowing? MovieShowing { get; set; }
         public ReservationType ReservationType { get; set; }
         public ReservationContactType ReservationContactType { get; set; }
         public ICollection<Ticket> Tickets { get; set; } = new HashSet<Ticket>();
