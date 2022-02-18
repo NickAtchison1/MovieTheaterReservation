@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace MovieTheaterReservation.Shared.DisplayModels.MovieShowing
 {
-    internal class MovieShowingEdit
+    public class MovieShowingEdit
     {
+        public int MovieShowingId { get; set; }
+        public int MovieId { get; set; }
+        public int AuditoriumId { get; set; }
+        public DateTime MovieShowingDate { get; set; }
+        public TimeSpan MovieShowingTime { get; set; }
     }
 }
