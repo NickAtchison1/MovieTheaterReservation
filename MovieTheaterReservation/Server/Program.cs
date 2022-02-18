@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using MovieTheaterReservation.Data.Data;
 using MovieTheaterReservation.Data.Models;
+using MovieTheaterReservation.Services.Services.AuditoriumService;
 using MovieTheaterReservation.Services.Services.MovieService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,7 @@ builder.Services.AddAuthentication()
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IAuditoriumService, AuditoriumService>();
 
 var app = builder.Build();
 
