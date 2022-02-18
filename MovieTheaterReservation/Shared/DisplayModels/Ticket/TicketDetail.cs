@@ -13,7 +13,7 @@ namespace MovieTheaterReservation.Shared.DisplayModels.Ticket
         public int TicketId { get; set; }
         public int MovieShowingId { get; set; }
         public string MovieTitle { get; set; } = string.Empty;
-        public Rating Rating { get; set }
+        public Rating Rating { get; set; }
         public string AuditoriumName { get; set; } = string.Empty;
         [Column(TypeName = "date")]
         public DateTime MovieShowingDate { get; set; }

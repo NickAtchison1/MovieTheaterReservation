@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\MovieTheaterReservation.Data\MovieTheaterReservation.Data.csproj" />
+    <ProjectReference Include="..\..\MovieTheaterReservation.Services\MovieTheaterReservation.Services.csproj" />
     <ProjectReference Include="..\Client\MovieTheaterReservation.Client.csproj" />
     <ProjectReference Include="..\Shared\MovieTheaterReservation.Shared.csproj" />
   </ItemGroup>
