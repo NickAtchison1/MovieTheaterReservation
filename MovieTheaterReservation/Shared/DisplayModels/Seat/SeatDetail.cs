@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieTheaterReservation.Shared.DisplayModels.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,12 @@ namespace MovieTheaterReservation.Shared.DisplayModels.Seat
 {
     internal class SeatDetail
     {
+        public int SeatId { get; set; }
+        public int RowNumber { get; set; }
+        public int SeatNumber { get; set; }
+        public SeatType SeatType { get; set; }
+        public int AuditoriumId { get; set; }
+        public string AuditoriumName { get; set;} = string.Empty;
+
     }
 }
