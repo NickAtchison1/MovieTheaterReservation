@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieTheaterReservation.Shared.DisplayModels.Seat
 {
-    internal class SeatDetail
+    public class SeatDetail
     {
         public int SeatId { get; set; }
         public int RowNumber { get; set; }
