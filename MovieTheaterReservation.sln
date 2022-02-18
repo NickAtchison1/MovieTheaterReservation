@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Server", "MovieTheaterReservation\Server\MovieTheaterReservation.Server.csproj", "{B176B887-A745-45AC-BC3A-DE767B306390}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieTheaterReservation.Server", "MovieTheaterReservation\Server\MovieTheaterReservation.Server.csproj", "{B176B887-A745-45AC-BC3A-DE767B306390}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Client", "MovieTheaterReservation\Client\MovieTheaterReservation.Client.csproj", "{E95BEF4D-1E29-4F51-88A6-71FEF0FCD1D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieTheaterReservation.Client", "MovieTheaterReservation\Client\MovieTheaterReservation.Client.csproj", "{E95BEF4D-1E29-4F51-88A6-71FEF0FCD1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Shared", "MovieTheaterReservation\Shared\MovieTheaterReservation.Shared.csproj", "{C53607CA-65C3-40F5-B0F6-D609E8A6A7D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieTheaterReservation.Shared", "MovieTheaterReservation\Shared\MovieTheaterReservation.Shared.csproj", "{C53607CA-65C3-40F5-B0F6-D609E8A6A7D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Data", "MovieTheaterReservation.Data\MovieTheaterReservation.Data.csproj", "{1109C9F7-DABC-40B6-8B5A-59C514741426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieTheaterReservation.Data", "MovieTheaterReservation.Data\MovieTheaterReservation.Data.csproj", "{1109C9F7-DABC-40B6-8B5A-59C514741426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTheaterReservation.Services", "MovieTheaterReservation.Services\MovieTheaterReservation.Services.csproj", "{AE3CAD35-1910-4662-AF1A-8DA52672E1E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1109C9F7-DABC-40B6-8B5A-59C514741426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE3CAD35-1910-4662-AF1A-8DA52672E1E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE3CAD35-1910-4662-AF1A-8DA52672E1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE3CAD35-1910-4662-AF1A-8DA52672E1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE3CAD35-1910-4662-AF1A-8DA52672E1E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
