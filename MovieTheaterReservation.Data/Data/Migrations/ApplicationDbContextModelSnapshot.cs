@@ -105,7 +105,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasIndex("Use");
 
-                    b.ToTable("Keys");
+                    b.ToTable("Keys", (string)null);
                 });
 
             modelBuilder.Entity("Duende.IdentityServer.EntityFramework.Entities.PersistedGrant", b =>
@@ -393,7 +393,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Auditoriums");
+                    b.ToTable("Auditoriums", (string)null);
                 });
 
             modelBuilder.Entity("MovieTheaterReservation.Data.Models.Movie", b =>
@@ -430,7 +430,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movies");
+                    b.ToTable("Movies", (string)null);
                 });
 
             modelBuilder.Entity("MovieTheaterReservation.Data.Models.MovieShowing", b =>
@@ -473,7 +473,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("MoviesShowings");
+                    b.ToTable("MoviesShowings", (string)null);
                 });
 
             modelBuilder.Entity("MovieTheaterReservation.Data.Models.Reservation", b =>
@@ -511,7 +511,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasIndex("MovieShowingId");
 
-                    b.ToTable("Reservations");
+                    b.ToTable("Reservations", (string)null);
                 });
 
             modelBuilder.Entity("MovieTheaterReservation.Data.Models.Seat", b =>
@@ -552,7 +552,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasIndex("AuditoriumId");
 
-                    b.ToTable("Seats");
+                    b.ToTable("Seats", (string)null);
                 });
 
             modelBuilder.Entity("MovieTheaterReservation.Data.Models.Ticket", b =>
@@ -608,7 +608,7 @@ namespace MovieTheaterReservation.Data.Data.Migrations
 
                     b.HasIndex("SeatId");
 
-                    b.ToTable("Ticket");
+                    b.ToTable("Ticket", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
