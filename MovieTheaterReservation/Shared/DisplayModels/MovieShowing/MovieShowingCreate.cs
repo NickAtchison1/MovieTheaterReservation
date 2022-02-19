@@ -10,6 +10,7 @@ namespace MovieTheaterReservation.Shared.DisplayModels.MovieShowing
     public class MovieShowingCreate
     {
         public int MovieId { get; set; }
+        public string ImageUrl { get; set; } = string.Empty;
         public int AuditoriumId { get; set; }
         [Column(TypeName = "date")]
         public DateTime MovieShowingDate { get; set; }
