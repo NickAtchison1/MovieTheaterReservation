@@ -33,7 +33,7 @@ namespace MovieTheaterReservation.Services.Services.MovieService
                 UpdatedDate = DateTime.Now
 
             };
-            _context.Movies.Add(movieEntity);
+            await _context.Movies.AddAsync(movieEntity);
            return  await _context.SaveChangesAsync();
         }
 

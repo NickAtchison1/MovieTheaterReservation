@@ -29,7 +29,7 @@ namespace MovieTheaterReservation.Services.Services.AuditoriumService
                 UpdatedBy = userId,
                 UpdatedDate = DateTime.Now,
             };
-            _context.Auditoriums.Add(auditoriumEntity);
+            await _context.Auditoriums.AddAsync(auditoriumEntity);
             return await _context.SaveChangesAsync();
 
         }
