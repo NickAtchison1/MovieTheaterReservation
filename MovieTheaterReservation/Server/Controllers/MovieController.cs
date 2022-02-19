@@ -27,7 +27,7 @@ namespace MovieTheaterReservation.Server.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAllMovies()
         {
-            var reult = await _movieService.GetAllMovies();
+            var rseult = await _movieService.GetAllMovies();
             return Ok(reult);
         }
 
