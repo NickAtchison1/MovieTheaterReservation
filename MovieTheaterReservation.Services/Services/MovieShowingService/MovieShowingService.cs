@@ -37,7 +37,21 @@ namespace MovieTheaterReservation.Services.Services.MovieShowingService
             return await _context.SaveChangesAsync();
         }
 
-        //No MovieShowingListItem Yet
+        public async Task<IEnumerable<MovieShowingListItem>> GetAllMovieShowing()
+        {
+            var query = await _context.MoviesShowings
+                .Select(m => new MovieShowingListItem()
+                {
+                    MovieShowingId = m.Id,
+                    MovieTitle = m.Movie.Title,
+                    ImageUrl = m.Movie.ImageUrl,
+                    MovieShowingDate = m.Movie.CreatedDate,
+                    MovieShowingTime = m.MovieShowingTime
+                }).ToListAsync();
+            return query;
+
+        }
+
         public async Task<MovieShowingDetail> GetMovieShowing(int id)
         {
             var movieshowingEntity = await _context.MoviesShowings.SingleAsync(m => m.Id == id);
@@ -45,12 +59,14 @@ namespace MovieTheaterReservation.Services.Services.MovieShowingService
             {
                 MovieShowingId = movieshowingEntity.Id,
                 MovieTitle = movieshowingEntity.Movie.Title,
+                ImageUrl = movieshowingEntity.Movie.ImageUrl,
                 Auditorium = movieshowingEntity.Auditorium.Name,
                 MovieShowingDate = movieshowingEntity.MovieShowingDate,
                 MovieShowingTime = movieshowingEntity.MovieShowingTime
             };
             return movieshowingDetail;
         }
+
 
         public async Task<bool> UpdateMovieShowing(MovieShowingEdit movieShowingEdit, string userId)
         {

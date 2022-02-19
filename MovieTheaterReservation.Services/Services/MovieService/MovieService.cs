@@ -24,6 +24,7 @@ namespace MovieTheaterReservation.Services.Services.MovieService
             var movieEntity = new Movie()
             {
                 Title = movieCreate.Title,
+                ImageUrl = movieCreate.ImageUrl,
                 Rating = (Data.Models.Enums.Rating)movieCreate.Rating,
                 //(Data.Models.Enums.Rating)(Shared.DisplayModels.Enums.Rating)movieCreate.Rating,
                 Duration = movieCreate.Duration,
@@ -43,6 +44,7 @@ namespace MovieTheaterReservation.Services.Services.MovieService
                 .Select(m => new MovieListItem()
                 {
                     Title = m.Title,
+                    ImageUrl= m.ImageUrl,
                     Rating = (Shared.DisplayModels.Enums.Rating)m.Rating,
                 }).ToListAsync();
             return query;
@@ -55,6 +57,7 @@ namespace MovieTheaterReservation.Services.Services.MovieService
             {
                 MovieId = movieEntity.Id,
                 Title = movieEntity.Title,
+                ImageUrl = movieEntity.ImageUrl,
                 Rating = (Shared.DisplayModels.Enums.Rating)movieEntity.Rating,
                 Duration = movieEntity.Duration
             };
@@ -65,6 +68,7 @@ namespace MovieTheaterReservation.Services.Services.MovieService
         {
             var movieToUpdate = await _context.Movies.SingleAsync(m => m.Id == movieEdit.MovieId);
             movieToUpdate.Title = movieEdit.Title;
+            movieToUpdate.ImageUrl = movieEdit.ImageUrl;
             movieToUpdate.Rating = (Data.Models.Enums.Rating)movieEdit.Rating;
             movieToUpdate.Duration = movieEdit.Duration;
             movieToUpdate.CreatedBy = movieToUpdate.CreatedBy;
