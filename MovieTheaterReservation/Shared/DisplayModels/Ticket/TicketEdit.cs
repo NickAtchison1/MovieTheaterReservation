@@ -9,7 +9,7 @@ namespace MovieTheaterReservation.Shared.DisplayModels.Ticket
 {
     public  class TicketEdit
     {
-        public int TicktId { get; set; }
+        public int TicketId { get; set; }
         public int MovieShowingId { get; set; }
         public int SeatId { get; set; }
         public int ReservationId { get; set; }

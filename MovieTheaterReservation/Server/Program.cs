@@ -6,7 +6,9 @@ using MovieTheaterReservation.Data.Models;
 using MovieTheaterReservation.Services.Services.AuditoriumService;
 using MovieTheaterReservation.Services.Services.MovieService;
 using MovieTheaterReservation.Services.Services.MovieShowingService;
+using MovieTheaterReservation.Services.Services.ReservationService;
 using MovieTheaterReservation.Services.Services.SeatService;
+using MovieTheaterReservation.Services.Services.TicketService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +33,8 @@ builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IAuditoriumService, AuditoriumService>();
 builder.Services.AddScoped<ISeatService, SeatService>();
 builder.Services.AddScoped<IMovieShowingService, MovieShowingService>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<ITicketService, TicketService>();
 
 var app = builder.Build();
 

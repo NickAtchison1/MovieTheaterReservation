@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MovieTheaterReservation.Shared.DisplayModels.Ticket
 {
-    internal class TicketDetail
+    public class TicketDetail
     {
         public int TicketId { get; set; }
         public int MovieShowingId { get; set; }
